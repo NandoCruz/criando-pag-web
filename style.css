@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header .mobile{
+    display: none;
+    visibility: hidden;
+}
+
+/* CABEÇALHO */
+
+header{
+    max-width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 8px #f9c003;
+}
+
+.logo-nome{
+    padding: 10px;
+}
+
+/* MENU DESKTOP */
+
+.desktop{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-desktop ul{
+    display: flex;
+}
+
+.menu-desktop ul li{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.menu-desktop ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffffaa;
+    transition: .2s;
+}
+
+.menu-desktop ul li a:hover{
+    transform: scale(1.2);
+    font-weight: 600;
+    color: #fff;
+}
+
+/* REDES SOCIAIS */
+
+.desktop .logos{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop .logo{
+    color: #f9c003;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+.desktop .logo:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px #f9c003;
+}
+
+.desktop .logos .logo-linkedin{
+    color: #f9c003;
+    font-size: 30px;
+    border-radius: 0;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+.desktop .logos .logo-linkedin:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px #f9c003;
+}
+
+/* SESSÃO HOME */
+
+.home{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* LADO ESQUERDO */
+
+.home .lado-esquerdo{
+    width: 350px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+.home .lado-esquerdo img{
+    width: 300px;
+}
+
+.home .lado-esquerdo h2{
+    color: #fff;
+    font-size: 35px;
+}
+
+.home .lado-esquerdo h2 span{
+    color: #f9c003;
+    text-transform: uppercase;
+}
+
+.home .lado-esquerdo p{
+    color: #ffffffaa;
+    font-size: 18px;
+}
+
+/* LADO DIREITO */
+
+.home .lado-direito{
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.home .lado-direito h2{
+    color: #fff;
+    font-size: 35px;
+}
+
+.home .lado-direito h2 span{
+    color: #f9c003;
+    text-transform: uppercase;
+}
+
+.home .lado-direito p{
+    color: #ffffffaa;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* FOOTER */
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    box-shadow: 0px 0px 10px 8px #f9c003;
+}
+
+.rodape img{
+    width: 150px;
+    padding: 10px;
+}
+
+.rodape p{
+    color: #fff;
+    font-size: 18px;
+}
+
+.rodape .logos{
+    display: flex;
+    gap: 30px;
+}
+
+.rodape .logo{
+    color: #f9c003;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+.rodape .logo:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px #f9c003;
+}
+
+.rodape .logos .logo-linkedin{
+    color: #f9c003;
+    font-size: 30px;
+    border-radius: 0;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+.rodape .logos .logo-linkedin:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px #f9c003;
+}
+
+@media screen and (max-width:770px) {
+    .menu-desktop, .desktop .logos{
+        display: none;  
+    }
+
+    .logo-github i{
+        display: none;
+    }
+
+    /* MENU MOBILE */
+
+    .mobile .logo-lista i{
+        font-size: 35px;
+        color: #fff;
+    }
+
+    /* SESSÃO INICIO */
+
+    .home .lado-esquerdo{
+        margin-right: 0px;
+    }
+
+    /* LADO DIREITO */
+
+    .home .lado-direito{
+        width: 80vw;
+    }
+    
+    .home .lado-direito p{
+        margin-top: 30px;
+    }
+    
+    /* FOOTER */
+
+    .rodape{
+        flex-direction: column;        
+    }
+
+    .rodape .logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        border-top: 2px solid #fff;
+        margin: 20px auto;
+        padding-top: 20px;
+    }
+}
