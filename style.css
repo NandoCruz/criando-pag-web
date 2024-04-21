@@ -132,7 +132,20 @@ header{
 }
 
 .home .lado-esquerdo img{
-    width: 300px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* FLUTUAR IMAGEM */
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: 28px;
+    }
 }
 
 .home .lado-esquerdo h2{
