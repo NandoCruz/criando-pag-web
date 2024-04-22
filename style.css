@@ -171,7 +171,6 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 80px;
 }
 
 .home .lado-direito h2{
@@ -191,6 +190,42 @@ header{
     text-align: justify;
 }
 
+.gif{
+    width: 100px;
+    left: -120px;
+    position: relative;
+    animation: car 15s ease-in-out infinite;
+}
+
+.gif-right{
+    width: 100px;
+    left: -120px;
+    position: relative;
+    animation-direction: ;
+    animation: car-right 15s ease-in-out infinite;
+}
+
+@keyframes car {
+    0%{
+        transform: translate(-1700px) 
+        
+    }
+
+    100%{
+        transform: translate(1700px);
+    }
+}
+
+@keyframes car-right {
+    0%{
+        transform: translate(1700px);
+        
+    }
+
+    100%{
+        transform: translate(-70px) 
+    }
+}
 /* FOOTER */
 
 .rodape{
@@ -281,6 +316,18 @@ header{
         margin-top: 30px;
     }
     
+    @keyframes car {
+        0%{
+            transform: translate(-70px) 
+            
+        }
+    
+        100%{
+            transform: translate(880px);
+        }
+    }
+    
+
     /* FOOTER */
 
     .rodape{
