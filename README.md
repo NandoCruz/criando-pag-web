@@ -2,7 +2,7 @@
 ## Exercitando com uma página web com animação
 
 ![TelaPrincipal](https://github.com/NandoCruz/criando-pag-web/blob/main/imagens/Tela-animacao.png)
-
+##
 ![AssinaturaOnLine](https://github.com/NandoCruz/PowerBI-dashboard/blob/main/imagens/AssinaturaOnLine.png)
 
 ## Siga-me nas redes sociais
